@@ -51,30 +51,36 @@ This repository contains the final project for CSCA 5622 - Supervised Machine Le
 
 6. Follow instructions in notebooks to reproduce results
 
-# Project Summary
-This project implements machine learning models for Alzheimer's disease prediction using patient data. The goal is to develop accurate predictive models that can assist in early detection and risk assessment.
+# Project Overview
 
-## Key Features
-- Comprehensive analysis of patient data including:
-  - Demographics
-  - Medical history 
-  - Lifestyle factors
-  - Cognitive assessments
-- Rigorous model development and evaluation:
+This project implements machine learning models for Alzheimer's disease prediction using patient data. Our goal is to develop accurate predictive models that can assist in early detection and risk assessment.
+
+## Key Results
+
+- Analyzed comprehensive dataset including demographics, medical history, lifestyle factors and cognitive assessments
+- Implemented multiple ML models:
   - Support Vector Machines (SVM)
   - Random Forest
-  - Neural Networks
+  - Neural Networks 
   - Ensemble methods
-- Advanced model architecture:
-  - Stacking Classifier with logistic regression meta-learner
-  - Achieved ROC-AUC scores significantly above baseline
+- Achieved strong predictive performance:
+  - ROC-AUC scores significantly above baseline
+  - Stacking classifier with logistic regression meta-learner showed particularly promising results
+- Demonstrated potential for early disease detection and risk assessment
 
-## Impact
-The models demonstrate strong potential for:
+## Impact & Future Work
+
+The models show promise as valuable clinical decision support tools while highlighting important predictive factors that align with medical knowledge. Key impacts include:
+
 - Early detection of Alzheimer's disease risk factors
-- Supporting clinical decision making
-- Enabling preventive interventions
-- Improving patient outcomes through timely treatment
+- Support for clinical decision making
+- Enablement of preventive interventions 
+- Improved patient outcomes through timely treatment
+
+Future work will focus on:
+- Gathering more diverse training data
+- Additional feature engineering
+- External validation studies
 
 
 
