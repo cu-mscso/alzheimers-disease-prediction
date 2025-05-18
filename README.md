@@ -4,9 +4,7 @@
 This repository contains the final project for CSCA 5622 - Supervised Machine Learning course. The project demonstrates the application of various supervised learning techniques to solve real-world problems.
 
 ## Project Structure
-- `data/`: Contains datasets used in the project
 - `notebooks/`: Jupyter notebooks with analysis and model implementations
-- `src/`: Source code for model implementations
 - `results/`: Model outputs and evaluation metrics
 
 ## Getting Started
@@ -53,14 +51,32 @@ This repository contains the final project for CSCA 5622 - Supervised Machine Le
 
 6. Follow instructions in notebooks to reproduce results
 
-## Models Implemented
-- Model descriptions and implementations will be added here
+# Project Summary
+This project implements machine learning models for Alzheimer's disease prediction using patient data. The goal is to develop accurate predictive models that can assist in early detection and risk assessment.
 
-## Results
-- Key findings and results will be documented here
+## Key Features
+- Comprehensive analysis of patient data including:
+  - Demographics
+  - Medical history 
+  - Lifestyle factors
+  - Cognitive assessments
+- Rigorous model development and evaluation:
+  - Support Vector Machines (SVM)
+  - Random Forest
+  - Neural Networks
+  - Ensemble methods
+- Advanced model architecture:
+  - Stacking Classifier with logistic regression meta-learner
+  - Achieved ROC-AUC scores significantly above baseline
+
+## Impact
+The models demonstrate strong potential for:
+- Early detection of Alzheimer's disease risk factors
+- Supporting clinical decision making
+- Enabling preventive interventions
+- Improving patient outcomes through timely treatment
+
+
 
 ## Contributors
-- Add contributor names here
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details
+- Abdul Mohammed
