@@ -47,17 +47,18 @@ A machine learning project for early detection of Alzheimer's disease using supe
 ## Installation
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.10+
 - Git
 - pip (Python package manager)
+- pyenv (Python version manager)
 
 ### Setup
 
 1. **Using pyenv (recommended)**:
    ```bash
-   # Install Python 3.8
-   pyenv install 3.8.12
-   pyenv local 3.8.12
+   # Install Python 3.10.13
+   pyenv install 3.10.13
+   pyenv local 3.10.13
    ```
 
 2. **Create and activate virtual environment**:
