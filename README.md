@@ -198,9 +198,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or feedback, please reach out to [Abdul Mohammed](https://github.com/am368a) or open an issue on GitHub.
 
+## Video Resources
+
+This project was inspired by and makes use of insights from the following video resources:
+
+- [Title of Video 1](https://youtube.com/example1) - Brief description of how this video contributed to the project
+- [Title of Video 2](https://youtube.com/example2) - Brief description of key concepts or techniques learned
+- [Title of Video 3](https://youtube.com/example3) - Any specific implementation details or algorithms referenced
+
 ## Acknowledgments
 
 - [Kaggle](https://www.kaggle.com/) for the dataset
 - [scikit-learn](https://scikit-learn.org/) for machine learning tools
 - [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for visualizations
-- The open-source community for their valuable contributions
