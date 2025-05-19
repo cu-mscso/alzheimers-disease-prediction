@@ -4,11 +4,10 @@
 This repository contains the final project for CSCA 5622 - Supervised Machine Learning course. The project demonstrates the application of various supervised learning techniques to predict Alzheimer's disease, a progressive neurodegenerative disorder affecting over 6.7 million Americans. Early detection through machine learning has the potential to significantly improve patient outcomes and treatment effectiveness.
 
 ## Project Structure
-- `notebooks/`:
-    - `alzheimers-disease-prediction.ipynb`: Main analysis notebook with data exploration and model building
-    - `model_evaluation.ipynb`: Detailed performance metrics and visualizations
-- `results/`: Visualization outputs, performance metrics, and summary findings
-- `docs/`: Additional documentation and resources
+- [notebooks/](notebooks):
+    - [alzheimers-disease-prediction.ipynb](notebooks/alzheimers-disease-prediction.ipynb): Main analysis notebook with data exploration and model building
+- [results/](results): Visualization outputs, performance metrics, and summary findings
+- [docs/](docs): Additional documentation and resources
 
 ## Technical Approach
 - **Data Preprocessing**: Handling of missing values, feature engineering, and data normalization
@@ -66,16 +65,6 @@ Future work will focus on:
 - External validation studies
 
 ## Getting Started
-
-### Requirements
-- Python 3.8.12
-- NumPy (1.20.3)
-- Pandas (1.3.4)
-- Scikit-learn (1.0.1)
-- Matplotlib (3.4.3)
-- Seaborn (0.11.2)
-- TensorFlow (2.7.0) or PyTorch (1.10.0)
-- Imbalanced-learn (0.8.1)
 
 ### Installation
 
