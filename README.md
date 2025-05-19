@@ -136,39 +136,26 @@ The target variable is a binary classification indicating Alzheimer's diagnosis 
 
 ### Performance Visualization
 
-![Model Comparison](results/figures/model_performance.png)
-*Figure 1: Comparison of model performances across different metrics*
+#### 1. Model Performance Comparison
+
+![Model Performance - ROC Curves](results/figures/alzheimers_model_performance_roc_curves.png)
+*Figure 1: ROC curves comparing the performance of different machine learning models in predicting Alzheimer's disease. The Stacking Classifier (in purple) shows the best performance with an AUC of 0.96, closely followed by the Voting Classifier (in green) with an AUC of 0.96.*
+
+#### 2. Confusion Matrices
+
+![Model Performance - Confusion Matrices](results/figures/alzheimers_model_performance_confusion_matrices.png)
+*Figure 2: Confusion matrices for each model showing true vs. predicted classes. The diagonal elements represent correct predictions, while off-diagonal elements represent misclassifications. The Stacking Classifier demonstrates the highest accuracy with well-balanced precision and recall across both classes.*
+
+#### 3. Feature Correlation
+
+![Feature Correlation Heatmap](results/figures/correlation_heatmap.png)
+*Figure 3: Heatmap showing the correlation between different features in the dataset. This visualization helps in understanding the relationships between various predictors and can guide feature selection for model optimization.*
 
 ### Key Findings
 - Ensemble methods (Voting and Stacking) outperformed individual models
 - Neural Network showed the best performance among base models
 - All models demonstrated strong predictive power with ROC-AUC > 0.9
 
-## Usage
-
-### Training a New Model
-```python
-from sklearn.model_selection import train_test_split
-from src.models.train import train_model
-
-# Load and preprocess data
-X, y = load_data('data/processed/final_dataset.csv')
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Train model
-model = train_model(X_train, y_train)
-```
-
-### Making Predictions
-```python
-from src.models.predict import load_model, predict
-
-# Load trained model
-model = load_model('results/models/best_model.pkl')
-
-# Make predictions
-predictions = predict(model, X_test)
-```
 
 ## Impact & Future Work
 
@@ -203,7 +190,27 @@ predictions = predict(model, X_test)
 
 ### Setup Instructions
 
-1. **Clone the repository**
+1. **Install Python using pyenv (recommended)**
+   ```bash
+   # Install pyenv (if not already installed)
+   # On macOS using Homebrew:
+   brew update
+   brew install pyenv
+   
+   # On Linux:
+   # curl https://pyenv.run | bash
+   
+   # Install Python 3.8.x
+   pyenv install 3.8.12  # or the latest 3.8.x version
+   
+   # Set the local Python version for this project
+   pyenv local 3.8.12
+   
+   # Verify Python version
+   python --version
+   ```
+
+2. **Clone the repository**
    ```bash
    git clone https://github.com/cu-mscso/csca5622-supervised-ml-final.git
    cd csca5622-supervised-ml-final
