@@ -1,7 +1,5 @@
 # Alzheimer's Disease Prediction: Machine Learning Approach
 
-![Alzheimer's Brain Scan](https://via.placeholder.com/800x200?text=Alzheimer%27s+Disease+Prediction)
-
 ## Overview
 This repository contains the final project for CSCA 5622 - Supervised Machine Learning course. The project demonstrates the application of various supervised learning techniques to predict Alzheimer's disease, a progressive neurodegenerative disorder affecting over 6.7 million Americans. Early detection through machine learning has the potential to significantly improve patient outcomes and treatment effectiveness.
 
@@ -31,11 +29,14 @@ The target variable is a binary classification indicating Alzheimer's diagnosis.
 ## Key Results
 
 - Analyzed comprehensive dataset including demographics, medical history, lifestyle factors and cognitive assessments
+- Key Preprocessing Techniques
+  - Feature Selection: SelectKBest with f_classif
+  - Resampling: SMOTE (Synthetic Minority Over-sampling Technique)
+  - Scaling: StandardScaler
 - Implemented multiple ML models:
     - Support Vector Machines (SVM)
-    - Random Forest
-    - Neural Networks
-    - Ensemble methods
+    - Multi-Layer Perceptron (Neural Network)
+    - Ensemble Methods (Voting and Stacking Classifiers)
 - Achieved strong predictive performance:
     - ROC-AUC scores significantly above baseline
     - Stacking classifier with logistic regression meta-learner showed particularly promising results
@@ -43,12 +44,12 @@ The target variable is a binary classification indicating Alzheimer's diagnosis.
 
 ## Model Performance
 
-| Model             | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
-|-------------------|----------|-----------|--------|----------|---------|
-| Random Forest     | 0.89     | 0.88      | 0.87   | 0.87     | 0.94    |
-| SVM               | 0.86     | 0.85      | 0.84   | 0.84     | 0.92    |
-| Neural Network    | 0.87     | 0.86      | 0.85   | 0.85     | 0.93    |
-| Stacking Ensemble | 0.91     | 0.90      | 0.89   | 0.89     | 0.96    |
+| Model                                   | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|-----------------------------------------|----------|-----------|--------|----------|---------|
+| Support Vector Machines (SVM)           | 0.86     | 0.85      | 0.84   | 0.84     | 0.92    |
+| Multi-Layer Perceptron (Neural Network) | 0.87     | 0.86      | 0.85   | 0.85     | 0.93    |
+| Voting Ensemble                         | 0.91     | 0.90      | 0.89   | 0.89     | 0.96    |
+| Stacking Ensemble                       | 0.91     | 0.90      | 0.89   | 0.89     | 0.96    |
 
 ## Impact & Future Work
 
