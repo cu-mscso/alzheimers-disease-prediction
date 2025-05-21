@@ -168,38 +168,9 @@ This project utilizes a synthetic Alzheimer's disease dataset containing 2,149 r
 
 ## Impact & Future Work
 
-### Key Findings
-- Stacking Classifier achieved 95% accuracy (0.96 ROC-AUC)
-- Ensemble methods (Voting/Stacking) outperformed single models by 8-15%
-- Class imbalance identified as a key challenge
-- Top predictive features: MMSE scores, age, and specific biomarkers
-
-### Future Directions
-
-#### Data & Models
-- Expand dataset diversity and add neuroimaging data
-- Test transformer architectures and attention mechanisms
-- Address class imbalance with advanced techniques
-
-#### Clinical Application
-- Validate across multiple clinical sites
-- Develop EHR integration
-- Ensure regulatory compliance (HIPAA/GDPR)
-
-#### Research
-- Explore personalized medicine approaches
-- Partner with medical institutions
-- Publish peer-reviewed research
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- **Best Model:** Stacking Classifier achieved 95% accuracy (0.96 ROC-AUC); ensemble methods outperformed single models.
+- **Key Insights:** MMSE scores, age, and biomarkers are top predictors; class imbalance remains a challenge.
+- **Next Steps:** Expand dataset (e.g., neuroimaging), test advanced models (transformers), address class imbalance, validate clinically, and explore EHR integration.
 
 ## How to Cite
 
