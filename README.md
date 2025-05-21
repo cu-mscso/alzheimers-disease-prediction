@@ -40,9 +40,9 @@ A machine learning project for early detection of Alzheimer's disease using supe
    cd alzheimers-disease-prediction
    ```
 
-2. [Set up the environment](#installation)
+2. [Set up the environment](#installation) (install dependencies and activate the virtual environment).
 
-3. Launch the Jupyter lab:
+3. Launch Jupyter Lab:
    ```bash
    jupyter lab
    ```
@@ -109,14 +109,16 @@ jupyter lab
 ├── notebooks/              # Jupyter notebooks
 │   └── alzheimers-disease-prediction.ipynb
 ├── results/                # Output files
-│   └── figures/           # Generated visualizations
+│   └── figures/            # Generated visualizations
 ├── requirements.txt        # Python dependencies
-└── README.md              # Project documentation
+└── README.md               # Project documentation
 ```
 
 ## Dataset
 
-This project utilizes a synthetic Alzheimer's disease dataset containing 2,149 records with 35 features including:
+This project utilizes a synthetic Alzheimer's disease dataset containing 2,149 records with 35 features.
+
+**[Download the dataset from Kaggle](https://www.kaggle.com/datasets/synapse/alzheimers-disease-dataset)**
 
 ### Features
 - **Demographic**: Age, gender, ethnicity
@@ -150,10 +152,10 @@ This project utilizes a synthetic Alzheimer's disease dataset containing 2,149 r
 *Table 2: Performance comparison of machine learning models (Class 0: No Alzheimer's, Class 1: Alzheimer's)*
 
 ### Key Observations
-- The **Stacking Classifier** achieved the highest accuracy (95%) and balanced performance across both classes
-- **Ensemble methods** (Voting and Stacking) consistently outperformed individual models
-- The MLP Classifier showed poor performance (35% accuracy) with complete failure to predict Class 0
-- Class imbalance is evident, particularly in the resampled SVC model which predicted all samples as Class 0
+- The **Stacking Classifier** achieved the highest accuracy (95%) and balanced performance across both classes.
+- **Ensemble methods** (Voting and Stacking) consistently outperformed individual models.
+- The MLP Classifier showed poor performance (35% accuracy) with complete failure to predict Class 0.
+- Class imbalance is evident, particularly in the resampled SVC model which predicted all samples as Class 0.
 
 ### Visualizations
 
@@ -177,7 +179,7 @@ This project utilizes a synthetic Alzheimer's disease dataset containing 2,149 r
 
 ## How to Cite
 
-```
+```bibtex
 @misc{mohammed2025alzheimer,
   author = {Mohammed, Abdul},
   title = {Machine Learning for Alzheimer's Disease Prediction},
@@ -205,6 +207,6 @@ This project was inspired by and makes use of insights from the following video 
 
 ## Acknowledgments
 
-- [Kaggle](https://www.kaggle.com/) for the dataset
-- [scikit-learn](https://scikit-learn.org/) for machine learning tools
-- [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for visualizations
+- [Kaggle](https://www.kaggle.com/) for the dataset.
+- [scikit-learn](https://scikit-learn.org/) for machine learning tools.
+- [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for visualizations.
