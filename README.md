@@ -104,14 +104,9 @@ A machine learning project for early detection of Alzheimer's disease using supe
 ## Project Structure
 
 ```
-.
-├── data/                   # Raw and processed data
-│   ├── raw/                # Original data files
-│   └── processed/          # Cleaned and processed data
 ├── notebooks/              # Jupyter notebooks
 │   └── alzheimers-disease-prediction.ipynb
 ├── results/                # Output files
-│   ├── models/            # Saved models
 │   └── figures/           # Generated visualizations
 ├── requirements.txt        # Python dependencies
 └── README.md              # Project documentation
