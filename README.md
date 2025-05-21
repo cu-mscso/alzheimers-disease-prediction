@@ -1,7 +1,7 @@
 # Alzheimer's Disease Prediction: Machine Learning Approach
 
-[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cu-mscso/csca5622-supervised-ml-final)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cu-mscso/alzheimers-disease-prediction)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Table of Contents
@@ -33,8 +33,8 @@ A machine learning project for early detection of Alzheimer's disease using supe
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/cu-mscso/csca5622-supervised-ml-final.git
-   cd csca5622-supervised-ml-final
+   git clone https://github.com/cu-mscso/alzheimers-disease-prediction.git
+   cd alzheimers-disease-prediction
    ```
 
 2. [Set up the environment](#installation)
@@ -216,7 +216,7 @@ Contributions are welcome! Please follow these steps:
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/cu-mscso/csca5622-supervised-ml-final}}
+  howpublished = {\url{https://github.com/cu-mscso/alzheimers-disease-prediction}}
 }
 ```
 
