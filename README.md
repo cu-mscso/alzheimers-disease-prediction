@@ -9,15 +9,18 @@
 - [Quick Start](#quick-start)
 - [Installation](#installation)
   - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
+  - [Setup Instructions](#setup-instructions)
 - [Project Structure](#project-structure)
 - [Dataset](#dataset)
 - [Model Performance](#model-performance)
   - [Results](#results)
   - [Visualizations](#visualizations)
 - [Impact & Future Work](#impact--future-work)
-- [Contributing](#contributing)
+- [How to Cite](#how-to-cite)
+- [License](#license)
 - [Contact](#contact)
+- [Video Resources](#video-resources)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
