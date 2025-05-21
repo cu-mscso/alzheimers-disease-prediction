@@ -197,9 +197,8 @@ For questions or feedback, please reach out to [Abdul Mohammed](https://github.c
 
 This project was inspired by and makes use of insights from the following video resources:
 
-- [Title of Video 1](https://youtube.com/example1) - Brief description of how this video contributed to the project
-- [Title of Video 2](https://youtube.com/example2) - Brief description of key concepts or techniques learned
-- [Title of Video 3](https://youtube.com/example3) - Any specific implementation details or algorithms referenced
+- [Step-by-Step Data Cleaning with Python](https://www.youtube.com/watch?v=MDaMmWBI-S8)
+- [Hands-on Class Imbalance Treatment in Python](https://www.youtube.com/watch?v=HJ0Av9xkPA8)
 
 ## Acknowledgments
 
