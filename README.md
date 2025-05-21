@@ -118,7 +118,7 @@ jupyter lab
 
 This project utilizes a synthetic Alzheimer's disease dataset containing 2,149 records with 35 features.
 
-**[Download the dataset from Kaggle](https://www.kaggle.com/datasets/synapse/alzheimers-disease-dataset)**
+**[Download the dataset from Kaggle](https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset)**
 
 ### Features
 - **Demographic**: Age, gender, ethnicity
