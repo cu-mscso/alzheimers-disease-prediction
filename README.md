@@ -52,22 +52,51 @@ A machine learning project for early detection of Alzheimer's disease using supe
 - pip (Python package manager)
 - pyenv (Python version manager)
 
-### Setup
-
-1. **Using pyenv (recommended)**:
+#### Installing pyenv (macOS/Linux)
+1. **Install dependencies** (for macOS):
    ```bash
-   # Install Python 3.10.13
+   brew update
+   brew install openssl readline sqlite3 xz zlib pyenv
+   ```
+   For Ubuntu/Linux:
+   ```bash
+   curl https://pyenv.run | bash
+   # Follow the printed instructions to add pyenv to your shell profile
+   sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
+     libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+     libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+   ```
+
+2. **Add pyenv to your shell** (macOS/Linux):
+   Add the following to your `~/.zshrc` or `~/.bashrc`:
+   ```bash
+   export PATH="$HOME/.pyenv/bin:$PATH"
+   eval "$(pyenv init --path)"
+   eval "$(pyenv virtualenv-init -)"
+   ```
+   Then restart your terminal or run:
+   ```bash
+   source ~/.zshrc  # or source ~/.bashrc
+   ```
+
+3. **Verify pyenv installation**:
+   ```bash
+   pyenv --version
+   ```
+
+4. **Install and set the required Python version** (replace `3.10.13` with your preferred version):
+   ```bash
    pyenv install 3.10.13
    pyenv local 3.10.13
    ```
 
-2. **Create and activate virtual environment**:
+5. **Create and activate a virtual environment using pyenv-virtualenv**:
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+   pyenv virtualenv 3.10.13 $(basename $PWD)
+   pyenv activate $(basename $PWD)
    ```
 
-3. **Install dependencies**:
+6. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
