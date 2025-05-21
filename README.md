@@ -39,9 +39,9 @@ A machine learning project for early detection of Alzheimer's disease using supe
 
 2. [Set up the environment](#installation)
 
-3. Launch the Jupyter notebook:
+3. Launch the Jupyter lab:
    ```bash
-   jupyter notebook notebooks/alzheimers-disease-prediction.ipynb
+   jupyter lab
    ```
 
 ## Installation
