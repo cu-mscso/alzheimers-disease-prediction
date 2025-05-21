@@ -50,56 +50,55 @@ A machine learning project for early detection of Alzheimer's disease using supe
 - Python 3.10+
 - Git
 - pip (Python package manager)
-- pyenv (Python version manager)
+- [pyenv](https://github.com/pyenv/pyenv) (recommended for managing Python versions)
 
-#### Installing pyenv (macOS/Linux)
-1. **Install dependencies** (for macOS):
-   ```bash
-   brew update
-   brew install openssl readline sqlite3 xz zlib pyenv
-   ```
-   For Ubuntu/Linux:
-   ```bash
-   curl https://pyenv.run | bash
-   # Follow the printed instructions to add pyenv to your shell profile
-   sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
-     libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
-     libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
-   ```
+### Setup Instructions
 
-2. **Add pyenv to your shell** (macOS/Linux):
-   Add the following to your `~/.zshrc` or `~/.bashrc`:
-   ```bash
-   export PATH="$HOME/.pyenv/bin:$PATH"
-   eval "$(pyenv init --path)"
-   eval "$(pyenv virtualenv-init -)"
-   ```
-   Then restart your terminal or run:
-   ```bash
-   source ~/.zshrc  # or source ~/.bashrc
-   ```
+#### 1. Install pyenv and dependencies
 
-3. **Verify pyenv installation**:
-   ```bash
-   pyenv --version
-   ```
+**macOS:**
+```bash
+brew update
+brew install openssl readline sqlite3 xz zlib pyenv
+```
 
-4. **Install and set the required Python version** (replace `3.10.13` with your preferred version):
-   ```bash
-   pyenv install 3.10.13
-   pyenv local $(basename $PWD)
-   ```
+**Ubuntu/Linux:**
+```bash
+curl https://pyenv.run | bash
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
+  libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+  libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
+After installation, add the following to your `~/.zshrc` or `~/.bashrc`:
+```bash
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+```
+Then restart your terminal or run:
+```bash
+source ~/.zshrc  # or source ~/.bashrc
+```
 
-5. **Create and activate a virtual environment using pyenv-virtualenv**:
-   ```bash
-   pyenv virtualenv 3.10.13 $(basename $PWD)
-   pyenv activate $(basename $PWD)
-   ```
+#### 2. Install Python and create a virtual environment
 
-6. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pyenv install 3.10.13
+pyenv virtualenv 3.10.13 $(basename $PWD)
+pyenv activate $(basename $PWD)
+```
+
+#### 3. Install Python dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. Launch Jupyter Lab
+
+```bash
+jupyter lab
+```
 
 ## Project Structure
 
