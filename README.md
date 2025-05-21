@@ -87,7 +87,7 @@ A machine learning project for early detection of Alzheimer's disease using supe
 4. **Install and set the required Python version** (replace `3.10.13` with your preferred version):
    ```bash
    pyenv install 3.10.13
-   pyenv local 3.10.13
+   pyenv local $(basename $PWD)
    ```
 
 5. **Create and activate a virtual environment using pyenv-virtualenv**:
