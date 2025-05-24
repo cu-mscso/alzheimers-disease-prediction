@@ -118,7 +118,25 @@ jupyter lab
 
 This project utilizes a synthetic Alzheimer's disease dataset containing 2,149 records with 35 features.
 
-**[Download the dataset from Kaggle](https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset)**
+### Kaggle Authentication Setup
+
+To download the dataset from Kaggle, you'll need to set up your Kaggle credentials:
+
+1. Create a Kaggle account at [https://www.kaggle.com](https://www.kaggle.com)
+2. Go to your account settings and create an API token
+3. Download the `kaggle.json` file
+4. Place the `kaggle.json` file in your project directory or in your home directory at `~/.kaggle/`
+
+Alternatively, you can use the following commands to set up your Kaggle credentials:
+
+```bash
+# Create .kaggle directory if it doesn't exist
+mkdir -p ~/.kaggle
+
+# Set up your Kaggle credentials
+kaggle config set -n username -v YOUR_USERNAME
+kaggle config set -n key -v YOUR_API_KEY
+```
 
 ### Features
 - **Demographic**: Age, gender, ethnicity
