@@ -109,12 +109,13 @@ jupyter lab
 ## Project Structure
 
 ```
+├── docs/                   # Project documentation
+│   └── reports/            # Project reports
 ├── notebooks/              # Jupyter notebooks
-│   └── alzheimers-disease-prediction.ipynb
 ├── results/                # Output files
 │   └── figures/            # Generated visualizations
 ├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+└── README.md               # Project overview documentation
 ```
 
 ## Dataset
