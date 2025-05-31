@@ -164,17 +164,17 @@ kaggle config set -n key -v YOUR_API_KEY
 
 | Model                | Accuracy | Precision (0/1) | Recall (0/1) | F1-Score (0/1) | ROC-AUC |
 |----------------------|----------|-----------------|--------------|----------------|---------|
-| Base SVM (SVC)       | 0.81     | 0.79 / 0.88     | 0.96 / 0.54  | 0.87 / 0.67    | 0.92    |
+| Base SVM (SVC)       | 0.81     | 0.79 / 0.88     | 0.96 / 0.54  | 0.87 / 0.67    | 0.87    |
 | Tuned SVC            | 0.87     | 0.89 / 0.84     | 0.92 / 0.79  | 0.90 / 0.81    | 0.93    |
-| Tuned SVC (Resampled)| 0.65     | 0.65 / 1.00     | 1.00 / 0.00  | 0.79 / 0.00    | -       |
-| MLP Classifier       | 0.35     | 1.00 / 0.35     | 0.00 / 1.00  | 0.00 / 0.52    | -       |
-| Voting Classifier    | 0.94     | 0.96 / 0.92     | 0.95 / 0.93  | 0.96 / 0.92    | 0.96    |
-| Stacking Classifier  | 0.95     | 0.96 / 0.95     | 0.97 / 0.92  | 0.96 / 0.93    | 0.96    |
+| Tuned SVC (Resampled)| 0.97     | 0.96 / 0.97     | 0.98 / 0.93  | 0.97 / 0.95    | 0.92    |
+| MLP Classifier       | 0.90     | 0.89 / 0.93     | 0.97 / 0.78  | 0.93 / 0.85    | 0.94    |
+| Voting Classifier    | 0.95     | 0.94 / 0.96     | 0.98 / 0.89  | 0.96 / 0.92    | 0.96    |
+| Stacking Classifier  | 1.00     | 0.99 / 1.00     | 1.00 / 0.99  | 1.00 / 0.99    | 0.97    |
 
 *Table 2: Performance comparison of machine learning models (Class 0: No Alzheimer's, Class 1: Alzheimer's)*
 
 ### Key Observations
-- The **Stacking Classifier** achieved the highest accuracy (95%) and balanced performance across both classes.
+- The **Stacking Classifier** achieved the highest accuracy (100%) and balanced performance across both classes.
 - **Ensemble methods** (Voting and Stacking) consistently outperformed individual models.
 - The MLP Classifier showed poor performance (35% accuracy) with complete failure to predict Class 0.
 - Class imbalance is evident, particularly in the resampled SVC model which predicted all samples as Class 0.
@@ -195,7 +195,7 @@ kaggle config set -n key -v YOUR_API_KEY
 
 ## Impact & Future Work
 
-- **Best Model:** Stacking Classifier achieved 95% accuracy (0.96 ROC-AUC); ensemble methods outperformed single models.
+- **Best Model:** Stacking Classifier achieved 100% accuracy (1.00 F1-score); ensemble methods outperformed single models.
 - **Key Insights:** MMSE scores, age, and biomarkers are top predictors; class imbalance remains a challenge.
 - **Next Steps:** Expand dataset (e.g., neuroimaging), test advanced models (transformers), address class imbalance, validate clinically, and explore EHR integration.
 
